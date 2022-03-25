@@ -20,7 +20,7 @@ Please enter a password, it must include at least:
     var symbolCheck = false
     var symbols = [`!`,`@`,`#`,`$`,`%`,`&`,`*`,`?`]
     var symbolsString = [`!@#$%&*?`]
-    for (i=0; i<8; i++) {
+    for (let i=0; i<8; i++) {
         if (password.includes(`${symbols[i]}`)) {
             symbolCheck = true
         }
@@ -29,7 +29,7 @@ Please enter a password, it must include at least:
     //Checks for a number
     var numberCheck = false
     var numbers = [1,2,3,4,5,6,7,8,9,0]
-    for (i=0; i<10; i++) {
+    for (let i=0; i<10; i++) {
         if (password.includes(`${numbers[i]}`) === true) {
             numberCheck = true
         } 
@@ -37,7 +37,7 @@ Please enter a password, it must include at least:
 
     //Checks for an uppercase letter
     var upperCaseCheck = false
-    for (i=0; i<password.length; i++) {
+    for (let i=0; i<password.length; i++) {
         if (passwordSplit[i] === passwordSplit[i].toUpperCase() &&  isNaN(passwordSplit[i]) && !symbols.includes(passwordSplit[i])) {
             upperCaseCheck = true
         } 
