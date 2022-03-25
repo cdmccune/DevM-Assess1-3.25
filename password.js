@@ -5,10 +5,15 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
-console.log("Welcome to the password validator tool!")
-
-
-reader.question("Please enter a password (must include 10 letters, capital letter, number and symbol (!@#$%&*?)): ", function(password){
+console.log(`
+Welcome to the password validator tool!`)
+reader.question(`
+Please enter a password, it must include at least:
+    - 10 letters
+    - 1 capital letter
+    - 1 number
+    - 1 symbol (!@#$%&*?))
+    Please enter here: `, function(password){
     passwordSplit = password.split('');
 
     //Checks for a symbol
@@ -38,17 +43,27 @@ reader.question("Please enter a password (must include 10 letters, capital lette
         } 
     }
 
-    //Checks for length and completes the number/symbol checks
+    //Checks for length and completes the number/symbol/uppercase checks
      if (password.length < 10) {
-        console.log("Your password has failed, it is too short.")
+        console.log(`
+        Your password has failed, it is too short.
+        `)
     } else if (numberCheck === false){
-        console.log ("Your password must include a number.")
+        console.log (`
+        Your password must include a number.
+        `)
     } else if (symbolCheck === false){
-        console.log ("Your password must include a special character. (!@#$%&*?)")
+        console.log (`
+        Your password must include a special character. (!@#$%&*?)
+        `)
     } else if (upperCaseCheck === false){
-        console.log ("Your password must include an uppercase letter.")
+        console.log (`
+        Your password must include an uppercase letter.
+        `)
     } else {
-        console.log("Your password has passed!")
+        console.log(`
+        Your password has passed!
+        `)
     }
 
  reader.close()
