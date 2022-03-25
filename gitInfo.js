@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+let gitDefinition = "git is a tool that is used to log the progress of a project. It is installed on your computer and can be accessed through the terminal."
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+let gitHubDefinition = "GitHub is a website that is disgned to be integrated with the program git. It allows you to place your git repositories onto the web to be saved and seen publically or privately"
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -25,7 +25,7 @@
     It should be a string containing your best definition of what 'git init' does.
 */
 
-//CODE HERE
+let gitInitDefinition = "git init intializes a git repository within a directory on your computer. This allows for specific files to be added and changes committed"
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -33,7 +33,7 @@
     It should be a string containing your best definition of what 'git clone' does.
 */
 
-//CODE HERE
+gitCloneDefinition = "git clone will take a remote repostiory and set up a copy of it in a location of your choosing. Essentially it is downloading a remote repo from a site like github."
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -41,7 +41,7 @@
     It should be a string containing your best definition of what 'git status' does.
 */
 
-//CODE HERE
+gitStatusDefinition = "git status give you an overview of how git is working in a folder. Tells you what changes haven't been logged and files that aren't being tracked."
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -52,7 +52,9 @@
     It should be a string containing the code to add all files.
 */
 
-//CODE HERE
+gitAddDefinition = "git add includes a file or files to a repository that has been initallized. It tells the git repository to watch that file."
+
+gitAddCode = "git add ."
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -63,8 +65,9 @@
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-//CODE HERE
+gitCommitDefinition = "git commit logs specific changes that are made to files that have been added to a git repo."
 
+gitCommitCode = "git commit -m 'initial commit'"
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -72,4 +75,4 @@
     It should be a string containing your best definition of what 'git push' does.
 */
 
-//CODE HERE
+gitPushDefinition = "git push places the code within a git repo onto github."
